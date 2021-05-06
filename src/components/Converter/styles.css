@@ -53,4 +53,9 @@
   margin-top: 35px;
   margin-bottom: 35px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.converter .elements button:hover {
+  background-color: #333333;
 }

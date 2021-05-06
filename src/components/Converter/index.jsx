@@ -29,7 +29,7 @@ class Converter extends Component {
       spanInvalidNumber.innerText = 'Max length is 8';
       spanInvalidNumber.style.display = 'block';
       spanInvalidNumber.style.color = 'red';
-      spanInvalidNumber.classList.add('spanRed')
+      spanInvalidNumber.classList.add('spanRed');
       spanInvalidNumber.style.paddingLeft = '10px'
       spanInvalidNumber.style.paddingTop = '5px'
       inputBin.appendChild(spanInvalidNumber);
@@ -37,7 +37,9 @@ class Converter extends Component {
       const dec = binToDec(binaryNumber);
       document.querySelector('.decimal').value = dec;
       document.querySelector('.input').style.border = 'none';
-      document.querySelector('span').style.display = 'none'
+      if (document.body.contains(document.querySelector('span'))) {
+        document.querySelector('span').style.display = 'none';
+      }
     }
   }
 
