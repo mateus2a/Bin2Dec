@@ -9,12 +9,18 @@ class Converter extends Component {
     this.convert = this.convert.bind(this);
   }
 
-  convert() {
+  convert(e) {
+    e.preventDefault();
     const binaryNumber = document.querySelector('.input').value;
+    if (binaryNumber.length > 8) {
+      console.log('Numero maior que 8');
+    } if (binaryNumber.includes(1) || binaryNumber.includes(1)) {
+      const dec = binToDec(binaryNumber);
+      document.querySelector('.decimal').value = dec;
+    } else {
+      console.log('Insira 1 ou 0');
+    }
 
-    const dec = binToDec(binaryNumber);
-
-    document.querySelector('.decimal').value = dec;
   }
 
   render() { 
