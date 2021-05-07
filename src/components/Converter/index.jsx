@@ -35,6 +35,11 @@ class Converter extends Component {
       inputBin.appendChild(spanInvalidNumber);
     } else {
       const dec = binToDec(binaryNumber);
+      document.querySelector('.input').addEventListener('keydown', function(ev) {
+        if(ev.keyCode != 48 && ev.keyCode != 49 && ev.keyCode != 8) {
+          ev.preventDefault();
+        }
+      });
       document.querySelector('.decimal').value = dec;
       document.querySelector('.input').style.border = 'none';
       if (document.body.contains(document.querySelector('span'))) {
