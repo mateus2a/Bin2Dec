@@ -50,13 +50,13 @@ class Converter extends Component {
           <h2>Convert Binary to Decimal</h2>
           <div className="elements">
             <div className="input-bin">
-              <input className="input" type="text" placeholder="Enter your binary number"/>
+              <input className="input" type="number" placeholder="Enter your binary number"/>
             </div>
             <div className="btn-convert">
               <button onClick={ this.convert }>Converter</button>
             </div>
             <div className="input-dec">
-              <input className="input decimal" type="text" placeholder="Result" disabled/>
+              <input className="input decimal" type="number" placeholder="Result" disabled/>
             </div>
           </div>
         </div>
