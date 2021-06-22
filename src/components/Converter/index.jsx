@@ -6,7 +6,7 @@ import './styles.css'
 class Converter extends Component {
   constructor() {
     super();
-    this.convert = this.convert.bind(this);
+    this.convertCondition = this.convertCondition.bind(this);
     this.isValidLength = this.isValidLength.bind(this);
   }
 
@@ -26,7 +26,7 @@ class Converter extends Component {
     return true;
   }
 
-  invalidNumberStyle(spanInvalidNumber, inputBin) {
+  addInvalidNumber(spanInvalidNumber, inputBin) {
     document.querySelector('.input').style.border = '2px solid red';
     spanInvalidNumber.innerText = 'Max length is 8';
     spanInvalidNumber.style.display = 'block';
@@ -37,21 +37,29 @@ class Converter extends Component {
     inputBin.appendChild(spanInvalidNumber);
   }
 
-  convert(e) {
-    e.preventDefault();
+  removeInvalidNumber() {
+    if (document.body.contains(document.querySelector('span'))) {
+      document.querySelector('span').style.display = 'none';
+    }
+  }
+
+  convertNumbers() {
     const binaryNumber = document.querySelector('.input').value;
+    const dec = binToDec(binaryNumber);
+    document.querySelector('.decimal').value = dec;
+    document.querySelector('.input').style.border = 'none';
+  }
+
+  convertCondition(e) {
+    e.preventDefault();
     const inputBin = document.querySelector('.input-bin');
     const spanInvalidNumber = document.createElement('span');
 
     if (this.isValidLength()) {
-      this.invalidNumberStyle(spanInvalidNumber, inputBin);
+      this.addInvalidNumber(spanInvalidNumber, inputBin);
     } else {
-      const dec = binToDec(binaryNumber);
-      document.querySelector('.decimal').value = dec;
-      document.querySelector('.input').style.border = 'none';
-      if (document.body.contains(document.querySelector('span'))) {
-        document.querySelector('span').style.display = 'none';
-      }
+      this.convertNumbers();
+      this.removeInvalidNumber();
     }
   }
 
@@ -65,7 +73,7 @@ class Converter extends Component {
               <input className="input" type="number" placeholder="Enter your binary number"/>
             </div>
             <div className="btn-convert">
-              <button onClick={ this.convert }>Converter</button>
+              <button onClick={ this.convertCondition }>Converter</button>
             </div>
             <div className="input-dec">
               <input className="input decimal" type="number" placeholder="Result" disabled/>
