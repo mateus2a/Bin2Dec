@@ -16,4 +16,8 @@ The following tools were used in the construction of the project:
 
 Here are all the contributors to the project.
 
-* **Mateus Alencar** - *Initial Work, Documentation* - [mateus2](https://github.com/mateus2a)
+* **Mateus Alencar** - *Initial Work, Documentation* - [mateus2a](https://github.com/mateus2a)
+
+## 📄 License
+
+This project is under the MIT license - see the LICENSE.md file for details.
