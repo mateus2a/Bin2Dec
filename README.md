@@ -38,7 +38,7 @@ $ npm start
 > ⚠️ The server will start at port:3000 - Access <http://localhost:3000>
 
 ## 🎥 Demonstration
-<img width="450" style="border-radius: 5px" height="280" alt="Demonstração do Aplicativo Proffy" src=".github/demo.gif"> |
+
 ## 🛠️ Technologies used
 
 The following tools were used in the construction of the project:
