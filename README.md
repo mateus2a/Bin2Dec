@@ -38,6 +38,9 @@ $ npm start
 > ⚠️ The server will start at port:3000 - Access <http://localhost:3000>
 
 ## 🎥 Demonstration
+<kbd>
+  <img width="500" style="border-radius: 5px" height="400" alt="Demonstração do Aplicativo Bin2Dec" src=".github/demo.gif">
+</kbd>
 
 ## 🛠️ Technologies used
 
