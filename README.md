@@ -35,7 +35,7 @@ $ npm install
 # Run the application
 $ npm start
 ```
-The server will start at port:3000 - Access <http://localhost:3000>
+> ⚠️ The server will start at port:3000 - Access <http://localhost:3000>
 
 ## 🛠️ Technologies used
 
