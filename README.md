@@ -11,3 +11,9 @@ The following tools were used in the construction of the project:
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Archive/CSS3)
 - [React](https://pt-br.reactjs.org/docs/getting-started.html)
+
+## ✒️ Authors
+
+Here are all the contributors to the project.
+
+* **Mateus Alencar** - *Initial Work, Documentation* - [mateus2](https://github.com/mateus2a)
