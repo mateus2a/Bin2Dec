@@ -25,7 +25,7 @@ A series of step-by-step examples that tell you what you must do to get a develo
 ```
 # Clone this repository
 $ git clone https://github.com/mateus2a/Bin2Dec.git bin2dec
-
+  
 # Access the project folder in the terminal/cmd
 $ cd bin2dec
 
@@ -37,6 +37,8 @@ $ npm start
 ```
 > ⚠️ The server will start at port:3000 - Access <http://localhost:3000>
 
+## 🎥 Demonstration
+<img width="280" style="border-radius: 5px" height="450" alt="Demonstração do Aplicativo Proffy" src=".github/demo.gif"> |
 ## 🛠️ Technologies used
 
 The following tools were used in the construction of the project:

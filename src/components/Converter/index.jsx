@@ -37,9 +37,10 @@ class Converter extends Component {
     inputBin.appendChild(spanInvalidNumber);
   }
 
-  removeInvalidNumber() {
+  removeInvalidNumber(spanInvalidNumber) {
     if (document.body.contains(document.querySelector('span'))) {
       document.querySelector('span').style.display = 'none';
+      spanInvalidNumber.innerText = '';
     }
   }
 
@@ -59,7 +60,7 @@ class Converter extends Component {
       this.addInvalidNumber(spanInvalidNumber, inputBin);
     } else {
       this.convertNumbers();
-      this.removeInvalidNumber();
+      this.removeInvalidNumber(spanInvalidNumber);
     }
   }
 
