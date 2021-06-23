@@ -20,4 +20,7 @@ Here are all the contributors to the project.
 
 ## 📄 License
 
-This project is under the MIT license - see the LICENSE.md file for details.
+This project is under the MIT license - see the [LICENSE.md](https://github.com/mateus2a/Bin2Dec/blob/master/LICENSE) file for details.
+
+---
+By [Mateus Alencar](https://github.com/mateus2a)
