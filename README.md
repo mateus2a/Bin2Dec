@@ -10,14 +10,12 @@ These instructions allowed you to get a copy of the project running on your loca
 
 ### 📋 Prerequisites
 
-
 The following programs are required to use and modify the project.
 
-```
-Git - is software for tracking changes in any set of files
+- [Git](https://git-scm.com/)
 
-NPM - is a package manager for the JavaScript programming language
-```
+- [NPM](https://nodejs.org/en/)
+
 
 ## 🛠️ Technologies used
 
